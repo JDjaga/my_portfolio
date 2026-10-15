@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="552" height="330" viewBox="0 0 552 330">
+  <defs>
+    <linearGradient id="aiNode" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b7cf6"/>
+      <stop offset="1" stop-color="#4cc9f0"/>
+    </linearGradient>
+    <pattern id="aiDots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" opacity="0.07"/>
+    </pattern>
+  </defs>
+  <rect width="552" height="330" fill="#0d1129"/>
+  <rect width="552" height="330" fill="url(#aiDots)"/>
+  <g stroke="#8b7cf6" stroke-opacity="0.35" stroke-width="2">
+    <line x1="96" y1="90" x2="196" y2="60"/>
+    <line x1="96" y1="90" x2="196" y2="130"/>
+    <line x1="96" y1="165" x2="196" y2="130"/>
+    <line x1="96" y1="165" x2="196" y2="200"/>
+    <line x1="96" y1="240" x2="196" y2="200"/>
+    <line x1="96" y1="240" x2="196" y2="270"/>
+    <line x1="196" y1="60" x2="296" y2="95"/>
+    <line x1="196" y1="130" x2="296" y2="95"/>
+    <line x1="196" y1="130" x2="296" y2="165"/>
+    <line x1="196" y1="200" x2="296" y2="165"/>
+    <line x1="196" y1="200" x2="296" y2="235"/>
+    <line x1="196" y1="270" x2="296" y2="235"/>
+    <line x1="296" y1="95" x2="386" y2="130"/>
+    <line x1="296" y1="165" x2="386" y2="130"/>
+    <line x1="296" y1="165" x2="386" y2="200"/>
+    <line x1="296" y1="235" x2="386" y2="200"/>
+  </g>
+  <g fill="url(#aiNode)">
+    <circle cx="96" cy="90" r="14"/>
+    <circle cx="96" cy="165" r="14"/>
+    <circle cx="96" cy="240" r="14"/>
+    <circle cx="196" cy="60" r="11"/>
+    <circle cx="196" cy="130" r="11"/>
+    <circle cx="196" cy="200" r="11"/>
+    <circle cx="196" cy="270" r="11"/>
+    <circle cx="296" cy="95" r="12"/>
+    <circle cx="296" cy="165" r="12"/>
+    <circle cx="296" cy="235" r="12"/>
+  </g>
+  <circle cx="386" cy="130" r="20" fill="#0b0e23" stroke="#4cc9f0" stroke-width="3"/>
+  <circle cx="386" cy="130" r="7" fill="#4cc9f0"/>
+  <circle cx="386" cy="200" r="20" fill="#0b0e23" stroke="#8b7cf6" stroke-width="3"/>
+  <path d="M378 200 l6 6 l11 -13" stroke="#8b7cf6" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <g>
+    <rect x="420" y="60" width="96" height="12" rx="6" fill="#e4ecff" opacity="0.85"/>
+    <rect x="420" y="84" width="96" height="9" rx="4.5" fill="#3a3f6b"/>
+    <rect x="420" y="101" width="70" height="9" rx="4.5" fill="#3a3f6b" opacity="0.6"/>
+    <rect x="420" y="228" width="60" height="34" rx="17" fill="#8b7cf6" opacity="0.16"/>
+    <rect x="420" y="228" width="60" height="34" rx="17" fill="none" stroke="#8b7cf6" stroke-opacity="0.6"/>
+    <circle cx="438" cy="245" r="4" fill="#8b7cf6"/>
+    <circle cx="452" cy="245" r="4" fill="#4cc9f0"/>
+    <circle cx="466" cy="245" r="4" fill="#10b981"/>
+  </g>
+  <g fill="url(#aiNode)">
+    <rect x="420" y="130" width="9" height="34" rx="4.5"/>
+    <rect x="436" y="118" width="9" height="58" rx="4.5"/>
+    <rect x="452" y="138" width="9" height="38" rx="4.5"/>
+    <rect x="468" y="126" width="9" height="50" rx="4.5"/>
+    <rect x="484" y="142" width="9" height="30" rx="4.5"/>
+    <rect x="500" y="132" width="9" height="44" rx="4.5"/>
+  </g>
+</svg>

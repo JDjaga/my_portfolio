@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="552" height="330" viewBox="0 0 552 330">
+  <defs>
+    <pattern id="meetDots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" opacity="0.07"/>
+    </pattern>
+  </defs>
+  <rect width="552" height="330" fill="#13162d"/>
+  <rect width="552" height="330" fill="url(#meetDots)"/>
+  <rect x="36" y="48" width="292" height="234" rx="14" fill="#0b0e23" stroke="#ffffff" stroke-opacity="0.09"/>
+  <rect x="60" y="72" width="120" height="12" rx="6" fill="#e4ecff" opacity="0.85"/>
+  <circle cx="272" cy="78" r="10" fill="#8b7cf6" opacity="0.8"/>
+  <circle cx="294" cy="78" r="10" fill="#4cc9f0" opacity="0.8"/>
+  <rect x="60" y="110" width="20" height="20" rx="6" fill="#10b981"/>
+  <path d="M65 120 l5 5 l9 -11" stroke="#06281c" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="92" y="111" width="150" height="9" rx="4.5" fill="#3a3f6b"/>
+  <rect x="92" y="123" width="105" height="8" rx="4" fill="#3a3f6b" opacity="0.6"/>
+  <rect x="60" y="160" width="20" height="20" rx="6" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+  <rect x="92" y="161" width="150" height="9" rx="4.5" fill="#3a3f6b"/>
+  <rect x="92" y="173" width="105" height="8" rx="4" fill="#3a3f6b" opacity="0.6"/>
+  <rect x="60" y="210" width="20" height="20" rx="6" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+  <rect x="92" y="211" width="150" height="9" rx="4.5" fill="#3a3f6b"/>
+  <rect x="92" y="223" width="105" height="8" rx="4" fill="#3a3f6b" opacity="0.6"/>
+  <path d="M328 118 L384 118" stroke="#4cc9f0" stroke-opacity="0.7" stroke-width="2.5" stroke-dasharray="6 6"/>
+  <polygon points="384,111 398,118 384,125" fill="#4cc9f0" opacity="0.9"/>
+  <circle cx="448" cy="118" r="46" fill="#0b0e23" stroke="#4cc9f0" stroke-width="2.5"/>
+  <line x1="448" y1="118" x2="448" y2="88" stroke="#e4ecff" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="448" y1="118" x2="468" y2="126" stroke="#e4ecff" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="448" cy="118" r="4" fill="#4cc9f0"/>
+  <rect x="368" y="192" width="148" height="72" rx="16" fill="#1f2547" stroke="#ffffff" stroke-opacity="0.09"/>
+  <circle cx="398" cy="216" r="5" fill="#8b7cf6"/>
+  <circle cx="418" cy="216" r="5" fill="#4cc9f0"/>
+  <circle cx="438" cy="216" r="5" fill="#10b981"/>
+  <rect x="388" y="232" width="108" height="8" rx="4" fill="#ffffff" opacity="0.14"/>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="552" height="330" viewBox="0 0 552 330">
+  <defs>
+    <radialGradient id="sunGrad" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fde68a"/>
+      <stop offset="0.55" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#ea580c"/>
+    </radialGradient>
+  </defs>
+  <rect width="552" height="330" fill="#0b0e23"/>
+  <g fill="#ffffff">
+    <circle cx="30" cy="40" r="1.5" opacity="0.7"/>
+    <circle cx="80" cy="120" r="1" opacity="0.5"/>
+    <circle cx="120" cy="30" r="2" opacity="0.8"/>
+    <circle cx="180" cy="70" r="1.2" opacity="0.5"/>
+    <circle cx="230" cy="40" r="1.5" opacity="0.7"/>
+    <circle cx="280" cy="90" r="1" opacity="0.5"/>
+    <circle cx="330" cy="40" r="2" opacity="0.8"/>
+    <circle cx="390" cy="110" r="1.2" opacity="0.5"/>
+    <circle cx="430" cy="50" r="1.5" opacity="0.7"/>
+    <circle cx="480" cy="140" r="1" opacity="0.5"/>
+    <circle cx="520" cy="60" r="2" opacity="0.8"/>
+    <circle cx="40" cy="220" r="1.5" opacity="0.6"/>
+    <circle cx="90" cy="280" r="1" opacity="0.5"/>
+    <circle cx="160" cy="250" r="2" opacity="0.7"/>
+    <circle cx="240" cy="300" r="1.2" opacity="0.5"/>
+    <circle cx="310" cy="260" r="1" opacity="0.5"/>
+    <circle cx="380" cy="300" r="1.5" opacity="0.7"/>
+    <circle cx="450" cy="230" r="1" opacity="0.5"/>
+    <circle cx="510" cy="280" r="2" opacity="0.8"/>
+    <circle cx="500" cy="200" r="1.2" opacity="0.6"/>
+    <circle cx="200" cy="300" r="1" opacity="0.5"/>
+    <circle cx="350" cy="180" r="1" opacity="0.5"/>
+  </g>
+  <ellipse cx="150" cy="165" rx="110" ry="46" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+  <ellipse cx="150" cy="165" rx="170" ry="72" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+  <ellipse cx="150" cy="165" rx="220" ry="100" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+  <circle cx="150" cy="165" r="70" fill="#f59e0b" opacity="0.14"/>
+  <circle cx="150" cy="165" r="44" fill="url(#sunGrad)"/>
+  <circle cx="260" cy="165" r="10" fill="#4cc9f0"/>
+  <ellipse cx="289" cy="206" rx="24" ry="8" transform="rotate(-20 289 206)" fill="none" stroke="#fbbf24" stroke-opacity="0.7" stroke-width="2"/>
+  <circle cx="289" cy="206" r="13" fill="#fbbf24"/>
+  <circle cx="357" cy="131" r="8" fill="#34d399"/>
+</svg>

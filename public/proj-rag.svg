@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="552" height="330" viewBox="0 0 552 330">
+  <defs>
+    <linearGradient id="ragBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b7cf6"/>
+      <stop offset="1" stop-color="#4cc9f0"/>
+    </linearGradient>
+    <pattern id="ragDots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" opacity="0.07"/>
+    </pattern>
+  </defs>
+  <rect width="552" height="330" fill="#13162d"/>
+  <rect width="552" height="330" fill="url(#ragDots)"/>
+  <rect x="36" y="56" width="296" height="218" rx="14" fill="#0b0e23" stroke="#ffffff" stroke-opacity="0.09"/>
+  <circle cx="60" cy="80" r="5" fill="#ff5f57"/>
+  <circle cx="78" cy="80" r="5" fill="#febc2e"/>
+  <circle cx="96" cy="80" r="5" fill="#28c840"/>
+  <rect x="36" y="96" width="296" height="1" fill="#ffffff" opacity="0.08"/>
+  <rect x="56" y="116" width="200" height="9" rx="4.5" fill="#8b7cf6"/>
+  <rect x="56" y="138" width="150" height="9" rx="4.5" fill="#3a3f6b"/>
+  <rect x="56" y="160" width="230" height="9" rx="4.5" fill="#4cc9f0"/>
+  <rect x="56" y="182" width="120" height="9" rx="4.5" fill="#3a3f6b"/>
+  <rect x="56" y="204" width="180" height="9" rx="4.5" fill="#8b7cf6" opacity="0.75"/>
+  <rect x="56" y="226" width="210" height="9" rx="4.5" fill="#4cc9f0" opacity="0.75"/>
+  <rect x="56" y="248" width="140" height="9" rx="4.5" fill="#3a3f6b"/>
+  <path d="M332 122 C 360 122, 360 102, 388 102" stroke="#cbacf9" stroke-opacity="0.45" fill="none" stroke-width="2"/>
+  <path d="M332 165 C 362 165, 362 165, 393 165" stroke="#4cc9f0" stroke-opacity="0.45" fill="none" stroke-width="2"/>
+  <path d="M332 208 C 360 208, 360 230, 388 230" stroke="#cbacf9" stroke-opacity="0.45" fill="none" stroke-width="2"/>
+  <circle cx="404" cy="102" r="14" fill="#0b0e23" stroke="#8b7cf6" stroke-width="2.5"/>
+  <circle cx="404" cy="102" r="4" fill="#8b7cf6"/>
+  <circle cx="412" cy="165" r="17" fill="#0b0e23" stroke="#4cc9f0" stroke-width="2.5"/>
+  <circle cx="412" cy="165" r="5" fill="#4cc9f0"/>
+  <circle cx="404" cy="230" r="14" fill="#0b0e23" stroke="#8b7cf6" stroke-width="2.5"/>
+  <circle cx="404" cy="230" r="4" fill="#8b7cf6"/>
+  <rect x="360" y="262" width="156" height="32" rx="16" fill="#8b7cf6" opacity="0.14"/>
+  <rect x="360" y="262" width="156" height="32" rx="16" fill="none" stroke="#8b7cf6" stroke-opacity="0.6"/>
+  <text x="438" y="283" text-anchor="middle" font-family="monospace" font-size="13" fill="#cbacf9">api.py:128</text>
+</svg>

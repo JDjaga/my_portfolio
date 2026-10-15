@@ -1,0 +1,14 @@
+# Netlify configuration for the Next.js portfolio.
+# The Essential Next.js plugin (declared below) is installed automatically
+# by Netlify at build time — no local install needed.
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+  NPM_FLAGS = "--legacy-peer-deps"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

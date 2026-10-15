@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="552" height="330" viewBox="0 0 552 330">
+  <defs>
+    <pattern id="inboxDots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" opacity="0.07"/>
+    </pattern>
+  </defs>
+  <rect width="552" height="330" fill="#13162d"/>
+  <rect width="552" height="330" fill="url(#inboxDots)"/>
+  <rect x="44" y="112" width="204" height="128" rx="14" fill="#0b0e23" stroke="#ffffff" stroke-opacity="0.09"/>
+  <path d="M44 126 L146 192 L248 126" fill="none" stroke="#8b7cf6" stroke-opacity="0.7" stroke-width="2.5"/>
+  <rect x="64" y="202" width="120" height="9" rx="4.5" fill="#3a3f6b"/>
+  <rect x="64" y="217" width="80" height="8" rx="4" fill="#3a3f6b" opacity="0.6"/>
+  <circle cx="232" cy="128" r="9" fill="#ff5f57"/>
+  <rect x="292" y="56" width="150" height="232" rx="22" fill="#0b0e23" stroke="#ffffff" stroke-opacity="0.09"/>
+  <rect x="342" y="68" width="50" height="8" rx="4" fill="#ffffff" opacity="0.15"/>
+  <rect x="306" y="96" width="100" height="26" rx="13" fill="#2a3560"/>
+  <rect x="328" y="130" width="100" height="26" rx="13" fill="#3b2a63"/>
+  <rect x="306" y="164" width="84" height="26" rx="13" fill="#2a3560"/>
+  <rect x="306" y="198" width="64" height="26" rx="13" fill="#2a3560"/>
+  <circle cx="322" cy="211" r="3" fill="#8b7cf6"/>
+  <circle cx="332" cy="211" r="3" fill="#4cc9f0"/>
+  <circle cx="342" cy="211" r="3" fill="#10b981"/>
+  <path d="M458 92 a30 30 0 0 1 42 0" fill="none" stroke="#4cc9f0" stroke-opacity="0.7" stroke-width="2.5"/>
+  <path d="M468 104 a16 16 0 0 1 22 0" fill="none" stroke="#4cc9f0" stroke-opacity="0.4" stroke-width="2.5"/>
+  <circle cx="479" cy="248" r="36" fill="#06281c" stroke="#10b981" stroke-width="2.5"/>
+  <path d="M465 248 l10 10 l20 -22" stroke="#10b981" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

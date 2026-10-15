@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  html {
+    scroll-padding-top: 5.5rem;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      scroll-behavior: auto !important;
+    }
+  }
+  * {
+    @apply !scroll-smooth border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  button {
+    @apply active:outline-none;
+  }
+}
+
+@layer utilities {
+  .heading {
+    @apply text-center text-4xl font-bold md:text-5xl;
+  }
+
+  .black-gradient {
+    background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
+  }
+
+  /* Card that catches the roaming sunrays: periodic diamond-shine sweep. */
+  .sunray-shine {
+    position: relative;
+  }
+
+  /* Stagger the shine sweep across sibling cards. */
+  .stagger-shine > *:nth-child(1) {
+    --shine-delay: 0s;
+  }
+  .stagger-shine > *:nth-child(2) {
+    --shine-delay: 1.1s;
+  }
+  .stagger-shine > *:nth-child(3) {
+    --shine-delay: 2.2s;
+  }
+  .stagger-shine > *:nth-child(4) {
+    --shine-delay: 3.3s;
+  }
+  .stagger-shine > *:nth-child(5) {
+    --shine-delay: 4.4s;
+  }
+  .stagger-shine > *:nth-child(6) {
+    --shine-delay: 5.5s;
+  }
+  .stagger-shine > *:nth-child(7) {
+    --shine-delay: 0.7s;
+  }
+  .stagger-shine > *:nth-child(8) {
+    --shine-delay: 1.8s;
+  }
+  .stagger-shine > *:nth-child(9) {
+    --shine-delay: 2.9s;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sunray-shine {
+    animation: sunray-border 7s ease-in-out infinite;
+    animation-delay: var(--shine-delay, 0s);
+  }
+
+  .sunray-shine::after {
+    content: "";
+    position: absolute;
+    inset: -60%;
+    border-radius: inherit;
+    background: linear-gradient(
+      115deg,
+      transparent 42%,
+      rgba(255, 255, 255, 0.13) 48%,
+      rgba(203, 172, 249, 0.2) 52%,
+      transparent 58%
+    );
+    mix-blend-mode: screen;
+    pointer-events: none;
+    animation: sunray-sweep 7s ease-in-out infinite;
+    animation-delay: var(--shine-delay, 0s);
+  }
+}
+
+@keyframes sunray-sweep {
+  0%,
+  54% {
+    transform: translateX(-75%);
+    opacity: 0;
+  }
+  62% {
+    opacity: 1;
+  }
+  88%,
+  100% {
+    transform: translateX(75%);
+    opacity: 0;
+  }
+}
+
+@keyframes sunray-border {
+  0%,
+  100% {
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 rgba(138, 43, 226, 0);
+  }
+  50% {
+    border-color: rgba(203, 172, 249, 0.45);
+    box-shadow:
+      0 0 36px rgba(138, 43, 226, 0.28),
+      inset 0 0 24px rgba(203, 172, 249, 0.06);
+  }
+}
