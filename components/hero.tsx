@@ -42,8 +42,8 @@ export const Hero = () => {
           </p>
 
           <a
-            href="/Jagadiish-SD-Resume.docx"
-            download="Jagadiish-SD-Resume.docx"
+            href="/Jagadiish-SD-Resume.pdf"
+            download="Jagadiish-SD-Resume.pdf"
             className="md:mt-10"
           >
             <MagicButton
