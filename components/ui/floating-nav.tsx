@@ -7,7 +7,7 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { navItems } from "@/data";
 import { cn } from "@/lib/utils";
@@ -26,19 +26,34 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
   // events in the scroll-down direction, which would otherwise hide the nav
   // the moment it arrives at the section.
   const lastNavClick = useRef(0);
+  // Idle timer: fade the nav out when the user stays on one spot.
+  const idleTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (idleTimer.current) clearTimeout(idleTimer.current);
+    };
+  }, []);
+
+  const scheduleIdleHide = () => {
+    if (idleTimer.current) clearTimeout(idleTimer.current);
+    idleTimer.current = setTimeout(() => {
+      // Keep it on the very top landing area; fade out everywhere else.
+      if (window.scrollY >= 50) setVisible(false);
+    }, 2500);
+  };
 
   useMotionValueEvent(scrollY, "change", (current) => {
     if (typeof current === "number") {
       if (current < 50 || Date.now() - lastNavClick.current < 1500) {
         setVisible(true);
-      } else {
-        if (current > lastScrollY) {
-          setVisible(false); // Scrolling down
-        } else {
-          setVisible(true); // Scrolling up
-        }
+      } else if (current > lastScrollY) {
+        setVisible(false); // Scrolling down
+      } else if (current < lastScrollY) {
+        setVisible(true); // Scrolling up, even slightly
       }
       setLastScrollY(current);
+      scheduleIdleHide();
     }
   });
 
@@ -54,7 +69,8 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
           opacity: visible ? 1 : 0,
         }}
         transition={{
-          duration: 0.2,
+          duration: 0.35,
+          ease: "easeInOut",
         }}
         className={cn(
           "fixed inset-x-0  top-10 z-[5000] mx-auto flex max-w-fit items-center justify-center space-x-4 rounded-3xl border border-white/[0.2] bg-black-100 px-3 py-5 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]",
