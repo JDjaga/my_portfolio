@@ -112,8 +112,9 @@ export const InfiniteMovingCards = ({
                   <Image
                     height={50}
                     width={50}
-                    src="/profile.svg"
+                    src="/profile-photo.png"
                     alt="profile"
+                    className="rounded-full object-cover"
                   />
                 </div>
 

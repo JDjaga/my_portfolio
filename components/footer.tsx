@@ -29,14 +29,15 @@ export const Footer = () => {
       >
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[60vw]">
-          Looking for an <span className="text-purple">AI / full-stack</span>{" "}
-          engineer who ships measured products?
+          Have an idea worth <span className="text-purple">shipping?</span>{" "}
+          Let&apos;s build it together
         </h1>
 
         <p className="my-5 text-center text-white-200 md:mt-10">
-          I&apos;m {links.ownerName} — {links.education}. Skilled in Python,
-          React, FastAPI, PyTorch & SQL. Reach out and let&apos;s build across
-          the stack.
+          From first sketch to Dockerized deployment — RAG copilots,
+          audio intelligence, full-stack platforms — with measured results
+          at every step. Tell me what you&apos;re building, and let&apos;s
+          talk timelines, stack, and what success looks like.
         </p>
 
         <Link
